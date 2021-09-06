@@ -5,8 +5,8 @@ Clone and run code:
 - git clone https://github.com/saigonbitmaster/styledReact
 - yarn //install node depedenceis
 - yarn run dev //run development mode 
-- yarn run build //build websie
-- yarn run start //run production
+- yarn run build //build the site
+- yarn run start //run production mode
 
 Modify data, images in the folder
 src/pages_/api/data.js
