@@ -2,7 +2,7 @@ This is a Next.js based project to style react components into beautiful ones. I
 
 ## Getting Started
 Clone and run code: 
-- git clone https://github.com/saigonbitmaster/teslaLikeReact
+- git clone https://github.com/saigonbitmaster/styledReact
 - yarn //install node depedenceis
 - yarn run dev //run development mode 
 - yarn run build //build websie
