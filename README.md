@@ -1,7 +1,7 @@
 This is a Next.js based project to style react components similar into beautiful ones. Including animations, effects and layouts.
 
 ## Getting Started
-Clone code and run code: 
+Clone and run code: 
 - git clone https://github.com/saigonbitmaster/teslaLikeReact
 - yarn //install node depedenceis
 - yarn run dev //run development mode 
