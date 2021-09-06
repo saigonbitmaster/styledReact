@@ -1,4 +1,5 @@
-This is a Next.js based project to style react components similar into beautiful ones. Including animations, effects and layouts.
+This is a Next.js based project to style react components similar into beautiful ones. Including animations, effects and layouts.![Screen Shot 2021-09-06 at 11 56 22 AM](https://user-images.githubusercontent.com/89018674/132180413-aa6ef60d-2fed-430c-892d-405ac3f86dcf.jpg)
+
 
 ## Getting Started
 Clone and run code: 
