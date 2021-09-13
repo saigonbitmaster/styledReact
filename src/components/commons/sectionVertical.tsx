@@ -2,7 +2,6 @@ import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-import data from '../../pages_/api/data.ts';
 import { MediumButton } from './customizedButton';
 
 const useStyles = makeStyles({

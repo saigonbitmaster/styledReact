@@ -11,8 +11,10 @@ import { useState } from 'react';
 import data from './api/data.ts';
 import ButtonGroup from '@/components/commons/buttonGroup';
 import TextContent from '../components/commons/sectionText';
+import styles from '@/layouts/styles';
 
 const Components = (): NextPage => {
+  const classes = styles();
   const content = data.general;
   const { t } = useTranslation();
   const [bar, setBar] = useState<boolean>(true);
@@ -21,7 +23,7 @@ const Components = (): NextPage => {
     setBar(index === 1);
     setFooter(index === 5);
   };
-  const imageUri = data.test.image1;
+
   return (
     <MainLayout footer={footer} bar={bar}>
       <Head>
@@ -30,23 +32,7 @@ const Components = (): NextPage => {
       </Head>
       <PagePiling id="components" options={{ afterLoad }}>
         <div className="section">
-          <div
-            style={{
-              backgroundImage: `url(${imageUri})`,
-              backgroundRepeat: 'no-repeat',
-              backgroundSize: 'cover',
-              width: '100%',
-              height: '100%',
-              display: 'flex',
-              flexWrap: 'wrap',
-              flexDirection: 'column',
-              boxSizing: 'border-box',
-              justifyContent: 'space-between',
-              paddingTop: '10%',
-              paddingBottom: '5%',
-              textAlign: 'center',
-            }}
-          >
+          <div className={classes.product01Background}>
             <HeaderSection color="white" />
             <ButtonGroup
               leftButton={{ href: '/submit', name: 'CUSTOM ORDER', backgroundColor: 'orange', color: 'white' }}
@@ -56,23 +42,7 @@ const Components = (): NextPage => {
           </div>
         </div>
         <div className="section">
-          <div
-            style={{
-              backgroundImage: `url(${imageUri})`,
-              backgroundRepeat: 'no-repeat',
-              backgroundSize: 'cover',
-              width: '100%',
-              height: '100%',
-              display: 'flex',
-              flexWrap: 'wrap',
-              flexDirection: 'column',
-              boxSizing: 'border-box',
-              justifyContent: 'space-between',
-              paddingTop: '10%',
-              paddingBottom: '5%',
-              textAlign: 'center',
-            }}
-          >
+        <div className={classes.product02Background}>
             <HeaderSection color="white" />
             <FooterSection color="white" href="/submit" />
           </div>

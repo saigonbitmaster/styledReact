@@ -36,10 +36,7 @@ export default {
     'Whether you want to get a taste of React, add some interactivity to a simple HTML page, or start a complex React-powered app, ' +
     'the links in this section will help you get started.',
   locations: 'Large or small, each one of our offices is designed to inspire innovation, big ideas, and community',
-  test: {
-    image: '/home.jpg',
-    image1: '/home.jpg',
-  },
+
   addresses: {
     hcm: {
       position: {
@@ -69,6 +66,14 @@ export default {
       phone: '',
       email: '',
       name: 'Malaysia Office',
+    },
+    us: {
+      position: { lat: 140.74294575444404, lng: -74.03189520387332 },
+
+      address: '1221 New York',
+      phone: '',
+      email: '',
+      name: 'NY Office',
     },
   },
 };

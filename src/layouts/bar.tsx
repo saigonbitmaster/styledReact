@@ -31,7 +31,7 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-export default function WosBar({ show, ...props }: ObjKeyValue): ReactElement {
+export default function Bar({ show, ...props }: ObjKeyValue): ReactElement {
   const classes = useStyles();
   const theme = useTheme();
   const [openDrawer, setOpenDrawer] = useState(false);

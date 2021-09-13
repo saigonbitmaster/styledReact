@@ -10,6 +10,7 @@ import { useState } from 'react';
 import data from './api/data.ts';
 import ButtonGroup from '@/components/commons/buttonGroup';
 import TextContent from '../components/commons/sectionText';
+import styles from '@/layouts/styles';
 
 const Components = (): NextPage => {
   const content = data.general;

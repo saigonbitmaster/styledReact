@@ -5,7 +5,7 @@ interface Props {
   children?: ReactElement;
 }
 
-export default function WosParticles({ children }: Props): ReactElement {
+export default function MyParticles({ children }: Props): ReactElement {
   return (
     <Particles
       id="ts-particles"

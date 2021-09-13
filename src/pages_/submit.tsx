@@ -6,69 +6,21 @@ import TextField from '@material-ui/core/TextField';
 import Grid from '@material-ui/core/Grid';
 import ContactSupport from '@material-ui/icons/ShoppingCart';
 import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/core/styles';
 import { NextPage } from 'next';
 import MainLayout from '@/layouts/mainLayout';
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    height: '100vh',
-    width: '100%',
-    // marginTop: theme.spacing(8),
-  },
-  image: {
-    backgroundImage: 'url(https://source.unsplash.com/4pPzKfd6BEg)',
-    backgroundRepeat: 'no-repeat',
-    backgroundColor: theme.palette.type === 'light' ? theme.palette.grey[50] : theme.palette.grey[900],
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-  },
-  paper: {
-    margin: theme.spacing(2, 2),
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-  },
-  avatar: {
-    margin: theme.spacing(1),
-    backgroundColor: theme.palette.secondary.main,
-  },
-  form: {
-    width: '100%', // Fix IE 11 issue.
-    marginTop: theme.spacing(1),
-  },
-  submit: {
-    margin: theme.spacing(3, 0, 2),
-  },
-}));
+import styles from '@/layouts/styles';
 
 export default function SignInSide(): NextPage {
-  const classes = useStyles();
+  const classes = styles();
 
   return (
     <MainLayout footer={true} bar={false}>
-      <div
-        style={{
-          backgroundImage: 'url(/submit.jpg)',
-          backgroundRepeat: 'no-repeat',
-          backgroundSize: 'cover',
-          width: '100%',
-          height: '100vh',
-          display: 'flex',
-          flexWrap: 'wrap',
-          flexDirection: 'column',
-          boxSizing: 'border-box',
-          justifyContent: 'space-between',
-          paddingTop: '0%',
-          paddingBottom: '5%',
-          textAlign: 'center',
-        }}
-      >
-        <Grid container component="main" className={classes.root} justify="center" alignItems="center">
+      <div className={classes.loginImage}>
+        <Grid container component="main" className={classes.loginRoot} justify="center" alignItems="center">
           <Grid item xs={12} sm={8} md={4} elevation={0} square>
             <Grid container>
               <Grid item>
-                <Avatar className={classes.avatar}>
+                <Avatar className={classes.loginAvatar}>
                   <ContactSupport />
                 </Avatar>
               </Grid>
@@ -122,7 +74,7 @@ export default function SignInSide(): NextPage {
                 </Grid>
 
                 <Grid item xs={12} sm={12} md={12}>
-                  <Button type="submit" fullWidth variant="contained" color="primary" className={classes.submit}>
+                  <Button type="submit" fullWidth variant="contained" color="primary" className={classes.loginSubmit}>
                     Send request
                   </Button>
                 </Grid>

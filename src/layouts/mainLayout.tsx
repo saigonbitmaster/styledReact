@@ -1,13 +1,13 @@
 import React, { ReactElement } from 'react';
 import Container from '@material-ui/core/Container';
 import { makeStyles } from '@material-ui/core/styles';
-import WosBar from './bar';
+import Bar from './bar';
 import Footer from './footer';
 import RootContextProvider from '@/components/contexts/rootContext';
 import dynamic from 'next/dynamic';
 import LayoutTransition from './layoutTransition';
 import clsx from 'clsx';
-const WosParticles = dynamic(() => import('./particles'));
+const Particles = dynamic(() => import('./particles'));
 
 interface MainLayoutProps {
   children: ReactElement;
@@ -40,8 +40,8 @@ export default function MainLayout({
   return (
     <RootContextProvider>
       <Container disableGutters={true} maxWidth={false} className={classes.root} {...rest}>
-        {particle && <WosParticles />}
-        <WosBar show={bar} />
+        {particle && <Particles />}
+        <Bar show={bar} />
         <LayoutTransition>{children}</LayoutTransition>
         <Footer show={footer} />
       </Container>

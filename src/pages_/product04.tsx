@@ -9,8 +9,10 @@ import PagePiling from '@/components/commons/pagePiling';
 import { useState } from 'react';
 import data from './api/data.ts';
 import TextContent from '../components/commons/sectionText';
+import styles from '@/layouts/styles';
 
 const Components = (): NextPage => {
+  const classes = styles();
   const content = data.product04;
   const { t } = useTranslation();
   const [bar, setBar] = useState<boolean>(true);
@@ -28,23 +30,7 @@ const Components = (): NextPage => {
       </Head>
       <PagePiling id="components" options={{ afterLoad }}>
         <div className="section">
-          <div
-            style={{
-              backgroundImage: 'url(/product04.jpg)',
-              backgroundRepeat: 'no-repeat',
-              backgroundSize: 'cover',
-              width: '100%',
-              height: '100%',
-              display: 'flex',
-              flexWrap: 'wrap',
-              flexDirection: 'column',
-              boxSizing: 'border-box',
-              justifyContent: 'space-between',
-              paddingTop: '10%',
-              paddingBottom: '5%',
-              textAlign: 'center',
-            }}
-          >
+          <div className={classes.product04Background}>
             <HeaderSection color="white" />
             <FooterSection color="white" href="/submit" />
           </div>

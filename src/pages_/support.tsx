@@ -9,6 +9,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import { NextPage } from 'next';
 import MainLayout from '@/layouts/mainLayout';
+import styles from '@/layouts/styles';
 
 const useStyles = makeStyles((theme) => ({
   root: {
